@@ -16,3 +16,18 @@ CREATE TABLE comments (
 	PRIMARY KEY (id),
 	FOREIGN KEY (users_id) REFERENCES users (id) ON DELETE SET NULL
 );
+
+// Insert data
+INSERT INTO users (username, pwd, email) VALUES ('user1', 'user1_123', 'user1@gmail.com');
+INSERT INTO users (username, pwd, email) VALUES ('user2', 'user2_123', 'user2@gmail.com');
+INSERT INTO users (username, pwd, email) VALUES ('user3', 'user3_123', 'user3@gmail.com');
+INSERT INTO comments (username, comment_text, users_id) VALUES ('user2', 'This is a comment on sql!' 2);
+
+// Delet data
+DELETE FROM users WHERE id = 1; 
+
+// Select data
+
+// 
+
+
